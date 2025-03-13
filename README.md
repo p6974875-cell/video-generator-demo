@@ -2,6 +2,8 @@
 
 A Next.js application that demonstrates the power of the [fal.ai](https://fal.ai) SDK for AI-powered video generation. This project showcases how to use fal's queue management system and proxy setup to create animated videos from static images.
 
+> fal.ai is a serverless platform for running AI models at scale.
+
 ## Features
 
 - Upload static images and animate them using AI
@@ -29,13 +31,12 @@ A Next.js application that demonstrates the power of the [fal.ai](https://fal.ai
    pnpm install
    ```
 
-3. Set up your fal.ai credentials:
-   - Sign up at [fal.ai](https://fal.ai)
-   - Create a `.env.local` file in the root directory
-   - Add your fal.ai API key:
+3. Set up your environment variables:
+   - Copy `.env.example` to `.env.local`:
+     ```bash
+     cp .env.example .env.local
      ```
-     FAL_API_KEY=your_api_key_here
-     ```
+   - Update the `FAL_API_KEY` in `.env.local` with your fal.ai API key
 
 4. Run the development server:
    ```bash
@@ -70,7 +71,7 @@ The project includes a proxy route (`/api/fal/proxy`) that securely forwards req
 
 ## Learn More
 
-- [fal.ai Documentation](https://fal.ai/docs)
+- [fal.ai Documentation](https://docs.fal.ai)
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 
