@@ -36,7 +36,7 @@ A Next.js application that demonstrates the power of the [fal.ai](https://fal.ai
      ```bash
      cp .env.example .env.local
      ```
-   - Update the `FAL_API_KEY` in `.env.local` with your fal.ai API key
+   - Update the `FAL_KEY` in `.env.local` with your fal.ai API key
 
 4. Run the development server:
    ```bash
